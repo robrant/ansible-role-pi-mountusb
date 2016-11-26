@@ -1,0 +1,6 @@
+
+# Where to mount to
+usb_directory_location: /mnt/usb
+
+# Naively assumes the device is at /dev/sda1
+disk_drive_partition: /dev/sda1
