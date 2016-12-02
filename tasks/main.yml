@@ -2,9 +2,9 @@
 # Create a location in the directory tree to mount to
 - name: Create a directory that we'll mount to
   file: path="{{ usb_directory_location }}" state=directory
-  
+
 # Mount device
-- name: Mount up device by label
+- name: Mount up device partition
   mount:
     name: "{{ usb_directory_location }}"
     src: "{{ disk_drive_partition }}"
